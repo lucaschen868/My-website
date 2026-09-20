@@ -4,9 +4,9 @@
 
 }
 .navbar {
-    background-color: #333;
+    background: rgba(18, 19, 28, 0.9);
+    backdrop-filter: blur(6px);
     height: 60px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,7 +46,6 @@
   position: sticky;
   top: 0;
   padding: 0;
-  background-color: #000000;
 }
 
 .hero-image {
@@ -83,8 +82,29 @@
   color: white;
 }
 
+/* flex container */
+.container {
+  display: flex;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 80px;
+}
+
+.product-box {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
 body {
-      background-color: rgba(0, 0, 0, 1);
-      font-size: 28px;
-      font-family: "", " ",;
+  background: rgba(18, 19, 28, 0.9);
+  backdrop-filter: blur(6px);
+  font-size: 28px;
+  font-family: "", " ",;
 }
