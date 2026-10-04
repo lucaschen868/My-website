@@ -98,13 +98,135 @@
     flex: 1;
     background-color: #f1f1f1;
     padding: 40px;
-    text-align: center;
     box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-info {
+    text-align: left;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+/* ===== Cart ===== */
+.cart-checkbox {
+    display: none;
+}
+
+.cart-toggle {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cart-toggle:hover {
+    color: #00bcd4;
+}
+
+.cart-panel {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100vh;
+    background: white;
+    z-index: 200;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: right 0.3s ease;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-close {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.cart-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 100;
+}
+
+.cart-checkbox:checked ~ .cart-panel {
+    right: 0;
+}
+
+.cart-checkbox:checked ~ .cart-overlay {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 body {
   background: rgba(18, 19, 28, 0.9);
   backdrop-filter: blur(6px);
-  font-size: 28px;
-  font-family: "", " ",;
+  font-size: 16px;
+  font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ===== Typography ===== */
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-links a,
+.cart-toggle {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hero-text h1 {
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hero-text p {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 8px 0 20px;
+}
+
+.hero-text button {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product-info h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 16px;
+    color: #1c1d2b;
+}
+
+.product-info p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #00838f;
+    margin-top: 4px;
+}
+
+.cart-header h2 {
+    font-size: 24px;
+    font-weight: 600;
 }
