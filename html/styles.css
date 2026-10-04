@@ -17,7 +17,7 @@
     color: white;
     font-size: 24px;
     font-weight: bold;
-    padding-left:10px;
+    padding-left:30px;
 }
 
 /* Navigation links container */
@@ -25,8 +25,7 @@
     display: flex;
     list-style: none;
     gap: 20px;
-    padding-right: 10px;
-    padding-bottom: 8px;
+    padding-right: 30px;
 }
 
 /* Links */
@@ -63,6 +62,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: max-content;
+  max-width: 90vw;
   color: white;
 }
 
@@ -178,7 +179,7 @@ body {
   background: rgba(18, 19, 28, 0.9);
   backdrop-filter: blur(6px);
   font-size: 16px;
-  font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
 }
 
 /* ===== Typography ===== */
